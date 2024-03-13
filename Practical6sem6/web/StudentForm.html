@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add new student</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="GetStudentDetails">
+            <label>Student ID: </label>
+            <input type="text" name="id"><br>
+            IC Number: <input type="text" name="ic"><br>
+            Name: <input type="text" name="name"><br>
+            Level:
+            <input type="radio"  name="level" value="F">Foundation
+            <input type="radio" name="level" value="D">Diploma
+            <input type="radio"  name="level" value="B">Bachelor
+            <br>
+            <label>Programme</label>
+            <select name="programme" >
+               <option value="CO">Computer Science and Computer Mathematics</option>
+               <option value="IA">Information System Engineering</option>
+               <option value="IB">Business Information Systems</option>
+            </select><br>
+            <label>Year of Study:</label>
+            <input type="text" name="yearStudy"><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
