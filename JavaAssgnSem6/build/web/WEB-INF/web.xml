@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>CheckOut</servlet-name>
+        <servlet-class>servlet.CheckOut</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Payment</servlet-name>
+        <servlet-class>servlet.Payment</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreditCard</servlet-name>
+        <servlet-class>servlet.CreditCard</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TryForward</servlet-name>
+        <servlet-class>servlet.TryForward</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckOut</servlet-name>
+        <url-pattern>/CheckOut</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Payment</servlet-name>
+        <url-pattern>/Payment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreditCard</servlet-name>
+        <url-pattern>/CreditCard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TryForward</servlet-name>
+        <url-pattern>/TryForward</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
